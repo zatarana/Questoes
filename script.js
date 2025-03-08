@@ -3,20 +3,22 @@
   let questions = [
     {
       id: 1,
-      materia: "portugues",
-      banca: "cespe",
-      nivel: "medio",
-      tags: ["gramatica", "concordancia"],
-      text: "Assinale a alternativa correta sobre concordância verbal:",
+      materia: "atualidades",
+      banca: "IBPTEC",
+      nivel: "superior",
+      tags: ["Guerra na Ucrânia", "Nova Ordem Mundial"],
+      text: "A invasão da Ucrânia pela Rússia, que ocorreu no dia 22 de fevereiro de 2022, pode ser vista como um conflito não apenas militar, mas também como um conflito econômico e político. Acerca dos conhecimentos sobre o fato histórico, marque a alternativa correta.",
       options: [
-        "Os menino brinca no parque.",
-        "Os meninos brinca no parque.",
-        "Os meninos brincam no parque."
-      ],
-      correct: 2,
+        "A guerra da Ucrânia é vista pelo eixo China, Rússia e Irã como a fase inicial do estabelecimento de uma Nova ordem Mundial, em que os Estados Unidos não seriam mais a potência mundial dominante, no chamado mundo multipolar.",
+        "Além da guerra da Ucrânia, diversos outros conflitos em outras zonas mundiais podem ser analisados como o estabelecimento de uma nova ordem mundial, como a Guerra do Afeganistão, que teve início em 2003.",
+        "A intervenção de outras potencias militares na guerra da Ucrânia, como a China, pode ser analisada como uma tentativa de conter o expansionismo Russo em direção ao leste da Europa.",
+        "Não há qualquer relação da guerra da Ucrânia com a Nova Ordem Mundial, formalizada pela Rússia, China e Irã.",
+        "A guerra da Ucrânia tem como uma de suas causas imediatas a invasão da Crimeia pela Rússia em 2014, após o presidente pró ocidente ter sido eleito nas eleições de 2013 na Ucrânia."
+],
+      correct: 0,
       resolution: "A alternativa correta é a terceira: o sujeito é 'os meninos', exigindo o verbo no plural.",
       dificuldade: "facil",
-      ano: 2023
+      ano: 2024
     },
     {
       id: 2,
