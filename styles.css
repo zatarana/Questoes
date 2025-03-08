@@ -1,0 +1,239 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #6c5ce7;
+  --success-color: #00b894;
+  --error-color: #d63031;
+  --text-color: #2d3436;
+  --bg-color: #ffffff;
+  --card-bg: #f8f9fa;
+  --border-color: #dfe6e9;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --text-color: #ffffff;
+  --bg-color: #2d3436;
+  --card-bg: #3e4547;
+  --border-color: #555f63;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow);
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+}
+
+.logo span {
+  color: var(--secondary-color);
+}
+
+/* Dashboard */
+.dashboard {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stats-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: var(--border-color);
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 5px;
+  width: 0%;
+  transition: width 0.5s ease;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+}
+
+.stat-item.correct {
+  border: 2px solid var(--success-color);
+}
+
+.stat-item.wrong {
+  border: 2px solid var(--error-color);
+}
+
+.stat-item.total {
+  border: 2px solid var(--primary-color);
+}
+
+/* Questões */
+.question {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.question h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.options {
+  display: grid;
+  gap: 1rem;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  cursor: pointer;
+  border: 2px solid var(--border-color);
+}
+
+.options label:hover {
+  border-color: var(--primary-color);
+}
+
+.options input:checked + span {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Feedback */
+.response-message {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.explanation {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: var(--border-color);
+  border-radius: 5px;
+}
+
+/* Filtros */
+.filters-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filter-item {
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.modern-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Paginação */
+.pagination {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.pagination span {
+  font-weight: bold;
+}
+
+/* Botões */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}

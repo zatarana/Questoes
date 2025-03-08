@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "materia": "portugues",
+        "banca": "cespe",
+        "nivel": "medio",
+        "tags": ["gramatica", "concordancia"],
+        "text": "Assinale a alternativa correta sobre concordância verbal:",
+        "options": [
+            "Os menino brinca no parque.",
+            "Os meninos brinca no parque.",
+            "Os meninos brincam no parque."
+        ],
+        "correct": 2,
+        "resolution": "A alternativa correta é a terceira.\n\nJustificativa:\n- Sujeito plural 'os meninos'\n- Verbo deve concordar no plural 'brincam'",
+        "dificuldade": "facil",
+        "ano": 2023
+    }
+]
